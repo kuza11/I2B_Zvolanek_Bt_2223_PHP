@@ -44,7 +44,7 @@
           echo str_repeat('&nbsp;', (($hw / 2) - $i));
           echo 'X';
           if($i != 0) echo str_repeat('&nbsp;', $i*2-1) . "X";
-          echo '<br>';
+          echo '<br/>';
         }
         echo str_repeat('X', $hw);
         ?>
