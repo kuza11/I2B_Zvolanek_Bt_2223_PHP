@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+#frm{
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-top: 30vh;
+  padding: 5rem;
+}
+button{
+  width: 100%;
+}
