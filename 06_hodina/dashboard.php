@@ -25,12 +25,12 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 
     foreach($users as $user){
       echo $user['id'];
-      if($username == $user['username'] && $password == md5($user['password']))return true;
+      if($username == $user['username'] && md5($password) == $user['password'])return true;
     }
     return false;
   }
 
-  if(login($username, $password)){
+  if(login($username, $password, $db)){
     $_SESSION['user'] = $username;
     $_SESSION['count'] = 0;
   }
